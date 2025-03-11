@@ -1,2 +1,3 @@
 # Ignore docs folder and all its contents
 /docs/
+/wow/.venv/
