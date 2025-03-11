@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  wow-api:
+    build: .
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./app:/app/app
+    environment:
+      - WOW_DATA_FILE=/app/app/data/wow_data.json
+      - PORT=8001

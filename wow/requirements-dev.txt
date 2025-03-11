@@ -1,0 +1,9 @@
+-r requirements.txt
+pytest==7.4.3
+behave==1.2.6
+black==23.11.0
+flake8==6.1.0
+mypy==1.6.1
+pytest-cov==4.1.0
+requests==2.31.0
+PyHamcrest==2.0.4

@@ -1,0 +1,135 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2025-03-11T08:30:00Z",
+    "change_history": [
+      {
+        "version": "1.0.0",
+        "date": "2025-03-11T08:30:00Z",
+        "description": "Initial version"
+      }
+    ]
+  },
+  "teams": [
+    {
+      "team_id": "team_alpha",
+      "team_name": "Alpha Squad",
+      "business_segment": "Internet Banking Division",
+      "value_streams": [
+        {
+          "value_stream_name": "Mortgage Application",
+          "value_stream_description": "End-to-end mortgage process",
+          "value_stream_breakdown": {
+            "countries": ["US", "UK"],
+            "product_lines": ["Mortgage", "Home Equity"]
+          }
+        },
+        {
+          "value_stream_name": "Shared Value Stream Segment",
+          "value_stream_description": "Common services or infrastructure"
+        }
+      ],
+      "services_applications": [
+        {
+          "service_name": "mortgage-processing",
+          "value_stream_segments": [
+            "Mortgage Application"
+          ],
+          "tech_stack": "Java",
+          "business_criticality": {
+            "sla": "99.9%",
+            "slo": "99.95%"
+          },
+          "runtime_components": [
+            "mortgage-processing-backend",
+            "mortgage-processing-reporting"
+          ],
+          "repository_url": "https://github.com/YourOrg/mortgage-processing"
+        },
+        {
+          "service_name": "shared-auth-service",
+          "value_stream_segments": [
+            "Shared Value Stream Segment"
+          ],
+          "tech_stack": ".NET",
+          "business_criticality": {
+            "sla": "99.5%",
+            "slo": "99.9%"
+          },
+          "runtime_components": [
+            "auth-microservice",
+            "auth-api"
+          ],
+          "repository_url": "https://github.com/YourOrg/shared-auth-service"
+        }
+      ],
+      "team_api": {
+        "team_mission": "Deliver secure and scalable banking solutions.",
+        "contact_channels": {
+          "slack_channel": "#alpha-squad-support",
+          "email": "alpha-squad@examplebank.com"
+        },
+        "team_type": "stream-aligned",
+        "collaboration_preferences": "We prefer asynchronous communication via Slack or tickets."
+      }
+    },
+    {
+      "team_id": "team_beta",
+      "team_name": "Beta Builders",
+      "business_segment": "Customer Portals",
+      "value_streams": [
+        {
+          "value_stream_name": "Customer Account Opening",
+          "value_stream_description": "Enables new customers to create and manage accounts.",
+          "value_stream_breakdown": {
+            "countries": ["US", "CA", "UK"],
+            "product_lines": ["Checking", "Savings"]
+          }
+        }
+      ],
+      "services_applications": [
+        {
+          "service_name": "account-portal-ui",
+          "value_stream_segments": [
+            "Customer Account Opening"
+          ],
+          "tech_stack": "Angular",
+          "business_criticality": {
+            "sla": "99.8%",
+            "slo": "99.9%"
+          },
+          "runtime_components": [
+            "account-portal-web",
+            "account-portal-api-gateway"
+          ],
+          "repository_url": "https://github.com/YourOrg/account-portal-ui"
+        },
+        {
+          "service_name": "customer-onboarding-service",
+          "value_stream_segments": [
+            "Customer Account Opening"
+          ],
+          "tech_stack": "Python",
+          "business_criticality": {
+            "sla": "99.9%",
+            "slo": "99.95%"
+          },
+          "runtime_components": [
+            "onboarding-api",
+            "onboarding-worker"
+          ],
+          "repository_url": "https://github.com/YourOrg/customer-onboarding-service"
+        }
+      ],
+      "team_api": {
+        "team_mission": "Create seamless customer onboarding experiences.",
+        "contact_channels": {
+          "slack_channel": "#beta-builders-help",
+          "email": "beta-builders@examplebank.com"
+        },
+        "team_type": "stream-aligned",
+        "collaboration_preferences": "Reach out any time – we monitor Slack daily."
+      }
+    }
+  ]
+}
